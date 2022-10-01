@@ -1,13 +1,18 @@
 import React from 'react'
-import statBgImg from '../../../public/stat-consult.png'
+import statBgImg from '../../assets/stat-consult.png'
 
-class Carousel extends React.Component{
-    render(){
-        return(
-            <div className={'carousel carousel-slider'}>
+const Pane = () => {
+    return (
+        <div className='w-full h-screen bg-zinc-200 flex-col justify-between'>
+            <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
+                <div>
+                    <p>Lorem Ipsum Dolor</p>
+                    <h2>Statistical Consulting</h2>
+                    <button>Get Started</button>
+                </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-export default Carousel
+export default Pane
